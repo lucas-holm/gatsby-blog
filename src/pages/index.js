@@ -1,10 +1,19 @@
 import React from "react"
-import { Container } from "../components"
+import { Container, Hero, Nav, Content, ContentCard } from "../components"
 
 const IndexPage = () => {
   return (
     <Container>
-      <h1>Hello World!!!!!!</h1>
+      <Hero />
+      <Nav />
+      <Content>
+        <ContentCard
+          date="2020-09-13"
+          title="TESTING"
+          excerpt="TESTAR ÄNNU MER"
+          slug="/"
+        />
+      </Content>
     </Container>
   )
 }
