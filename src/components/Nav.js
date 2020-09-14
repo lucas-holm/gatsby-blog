@@ -1,13 +1,12 @@
 import React from "react"
-import { NavWrapper } from "../elements"
-import { Link } from "gatsby"
+import { NavWrapper, NavLink } from "../elements"
 
 export const Nav = () => {
   return (
     <NavWrapper>
-      <Link to="/">Home</Link>
-      <Link to="/">About</Link>
-      <Link to="/">Contact</Link>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/">About</NavLink>
+      <NavLink to="/">Contact</NavLink>
     </NavWrapper>
   )
 }

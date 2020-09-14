@@ -1,6 +1,8 @@
+import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
-export const ButtonWrapper = styled.a`
+export const ButtonWrapper = styled(props => <Link {...props} />)`
   background-color: #44c767;
   border-radius: 28px;
   border: 1px solid #18ab29;

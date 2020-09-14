@@ -10,15 +10,25 @@ export const PaginationWrapper = styled.div`
 
   a:nth-child(1) {
     color: ${props =>
-      props.isFirst ? props.theme.colors.test : props.theme.colors.light1};
-    pointer-events: ${props.isFirst ? "none" : "auto"};
-    cursor: ${props.isFirst ? "default" : "pointer"};
+      props.isFirst
+        ? props.theme.colors.lightGray
+        : props.theme.colors.darkGray};
+    pointer-events: ${props => (props.isFirst ? "none" : "auto")};
+    cursor: ${props => (props.isFirst ? "default" : "pointer")};
   }
 
   a:nth-child(2) {
     color: ${props =>
-      props.isLast ? props.theme.colors.test : props.theme.colors.light1};
-    pointer-events: ${props.isLast ? "none" : "auto"};
-    cursor: ${props.isLast ? "default" : "pointer"};
+      props.isLast
+        ? props.theme.colors.lightGray
+        : props.theme.colors.darkGray};
+    pointer-events: ${props => (props.isLast ? "none" : "auto")};
+    cursor: ${props => (props.isLast ? "default" : "pointer")};
   }
+`
+
+export const PaginationElement = styled(props => <Link {...props} />)`
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 0 2rem;
 `
