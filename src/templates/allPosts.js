@@ -8,9 +8,10 @@ import {
   Pagination,
   Nav,
   Seo,
+  Burger,
 } from "../components"
 
-const allPosts = ({ pageContext, data }) => {
+const AllPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
@@ -23,6 +24,7 @@ const allPosts = ({ pageContext, data }) => {
     <Container>
       <Seo />
       <Hero />
+      <Burger />
       <Nav />
       <Content>
         {posts.map(post => (
@@ -45,7 +47,7 @@ const allPosts = ({ pageContext, data }) => {
   )
 }
 
-export default allPosts
+export default AllPosts
 
 export const pageQuery = graphql`
   query AllPostsQuery($skip: Int!, $limit: Int!) {

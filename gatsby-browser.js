@@ -11,11 +11,15 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        
     }
 
     body, html{
         font-family: ${props => props.theme.fonts.main};
         height: 100vh;
+        overflow-x: hidden;
+        position: relative;  
+        /* Position apparently has to be relative to get overflow-x to work on mobile */
     }
 
 `

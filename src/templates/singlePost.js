@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Container, Post, Hero, Nav, Seo } from "../components"
+import { Container, Post, Hero, Nav, Seo, Burger } from "../components"
 
 const singlePost = ({ data }) => {
   return (
@@ -11,6 +11,7 @@ const singlePost = ({ data }) => {
         description={data.mdx.frontmatter.excerpt}
       />
       <Hero />
+      <Burger />
       <Nav />
       <Post>
         <h1>{data.mdx.frontmatter.title}</h1>

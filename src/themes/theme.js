@@ -11,6 +11,7 @@ export default {
   },
   breakpoints: {
     mobile: "only screen and (max-width: 768px)",
+    desktop: "only screen and (min-width: 768px)",
   },
   shadows: {
     elevation:
