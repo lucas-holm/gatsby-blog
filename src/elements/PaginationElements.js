@@ -25,6 +25,10 @@ export const PaginationWrapper = styled.div`
     pointer-events: ${props => (props.isLast ? "none" : "auto")};
     cursor: ${props => (props.isLast ? "default" : "pointer")};
   }
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    grid-column: 1 / span 6;
+  }
 `
 
 export const PaginationElement = styled(props => <Link {...props} />)`

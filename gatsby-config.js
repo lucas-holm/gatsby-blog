@@ -6,6 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "My MDX Blog",
+    description: "A simple blog built with Gatsby and MDX",
+    url: "https://your-site.netlify.app/",
+    image:
+      "https://hatrabbits.com/wp-content/uploads/2016/12/rare-combinaties.jpg",
+    author: "Lucas Holm",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extenstions: [`.md`, `.mdx`],
+        extensions: [`.md`, `.mdx`],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,

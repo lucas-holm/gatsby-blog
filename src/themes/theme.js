@@ -1,12 +1,19 @@
 export default {
   fonts: {
-    main: "Muli, sans-serif",
+    main: "Roboto Mono, monospace",
   },
   colors: {
-    light1: "#a8dadc",
-    light2: "#a5a58d",
-    test: "#b5838d",
+    nav: "#b7b7a4",
+    content: "#a5a58d",
+    button: "#979dac",
     lightGray: "#d9d9d9",
     darkGray: "#343a40",
+  },
+  breakpoints: {
+    mobile: "only screen and (max-width: 768px)",
+  },
+  shadows: {
+    elevation:
+      "0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)",
   },
 }

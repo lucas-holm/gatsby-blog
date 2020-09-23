@@ -7,6 +7,7 @@ import {
   Hero,
   Pagination,
   Nav,
+  Seo,
 } from "../components"
 
 const allPosts = ({ pageContext, data }) => {
@@ -20,6 +21,7 @@ const allPosts = ({ pageContext, data }) => {
 
   return (
     <Container>
+      <Seo />
       <Hero />
       <Nav />
       <Content>

@@ -8,8 +8,13 @@ export const NavWrapper = styled.nav`
   align-items: center;
   justify-content: space-around;
   min-height: 5vh;
-  background-color: #b7b7a4;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background-color: ${props => props.theme.colors.nav};
+  box-shadow: ${props => props.theme.shadows.elevation};
+  border-bottom: solid 1px black;
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    grid-column: 1 / span 6;
+  }
 `
 
 export const NavLink = styled(props => <Link {...props} />)`
