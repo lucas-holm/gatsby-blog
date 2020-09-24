@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//custom styling for the wrapper of the post element
 export const PostWrapper = styled.main`
   grid-column: 2 / 6;
   background-color: ${props => props.theme.colors.content};

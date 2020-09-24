@@ -1,6 +1,7 @@
 import React from "react"
 import { NavWrapper, NavLink } from "../elements"
 
+//Nav-component for desktop
 export const Nav = () => {
   return (
     <NavWrapper>

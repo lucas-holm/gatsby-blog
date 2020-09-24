@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//styling for the hero-wrapper
 export const HeroImageWrapper = styled.div`
   grid-column: 2 / 6;
   height: 30vh;

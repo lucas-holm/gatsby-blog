@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+//styling for the button element
 export const ButtonWrapper = styled(props => <Link {...props} />)`
   background-color: ${props => props.theme.colors.button};
   border-radius: 20px;

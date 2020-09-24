@@ -1,3 +1,4 @@
+//variables for styling
 export default {
   fonts: {
     main: "Roboto Mono, monospace",
