@@ -1,3 +1,5 @@
+/* Custom styling for the code-elements in our blog-posts */
+
 .gatsby-highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;

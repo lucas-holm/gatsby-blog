@@ -1,6 +1,7 @@
 import React from "react"
 import { MenuLinks } from "../elements"
 
+//Nav-links for mobile
 export const BurgerLinks = ({ nav }) => {
   return (
     <MenuLinks nav={nav}>

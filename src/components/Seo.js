@@ -2,12 +2,16 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
+//Seo component with metadata that will end up in the <head> tag of the html-document.
 export const Seo = ({ description, keywords, title, image, url, author }) => {
-  const site = "yoururl.netlify.app"
+  const site = "https://lucas-holm-gatsby-blog.netlify.app/"
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
+        //we use the data from the graphql query to fill the meta-object with values.
+        //if we havn't passed in any of our own values, we use the values we get from
+        //the graphql query.
         const metaDescription = description
           ? description
           : data.site.siteMetadata.description
@@ -84,6 +88,7 @@ export const Seo = ({ description, keywords, title, image, url, author }) => {
   )
 }
 
+//Graphql query to get metadata for the site from the gatsby-config.
 const detailsQuery = graphql`
   query DefaultSEOQuery {
     site {

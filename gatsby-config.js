@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: "My MDX Blog",
     description: "A simple blog built with Gatsby and MDX",
-    url: "https://your-site.netlify.app/",
+    url: "https://lucas-holm-gatsby-blog.netlify.app/",
     image:
       "https://hatrabbits.com/wp-content/uploads/2016/12/rare-combinaties.jpg",
     author: "Lucas Holm",
