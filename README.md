@@ -46,3 +46,13 @@ code .
 ```bash
 gatsby develop
 ```
+
+## Programmeringsteknik
+
+Att använda sig utav ett framework så som gatsby/gridsome/react/vue etc vid utveckling av dynamiska webbsidor innebär att utvecklandet blir mindre upprepande då man använder sig utav komponenter.
+Då det finns väldigt mycket plugins/libraries till dessa frameworks kan vissa problem man stöter på lösas väldigt enkelt med hjälp av just sådana.
+Gatsby och gridsome fokuserar mycket på hastighet så att webbsidan kommer kännas betydligt snabbare vid navigering etc än vid en vanlig html-sida.
+
+Att istället utveckla utan ett framework hade inneburit fler filer, rörig filstruktur, väldigt mycket upprepande kod samt långsammare rendering.
+
+Ett framework kräver också en inlärningsprocess samt att det kan ta lite längre tid att komma igång med sitt projekt jämfört om man hade programmerat utan ett framework. Så ska man bygga ett litet projekt kanske inte ett framework är att föredra, men är det lite större med mer dynamiskt innehåll så underlättar det mycket med ett framework.
